@@ -1,0 +1,8 @@
+- name: Add line in hostfile
+  win_hosts:
+    state: present
+    canonical_name: '{{ item.name }}'
+    ip_address: '{{ item.ip }}'   
+  with_items: '{{ hostfile_list }}'
+  when: hostfile_list | lengh > 0
+  tags: hostfile
