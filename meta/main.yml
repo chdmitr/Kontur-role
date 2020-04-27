@@ -1,0 +1,11 @@
+galaxy_info:
+  author: chdmitr
+  description: Simple role gor hostfile
+  company: SKB Kontur
+  min_ansible_version: 2.2
+  platforms:
+    - name: Windows
+
+  galaxy_tags: []
+
+dependencies: []  
